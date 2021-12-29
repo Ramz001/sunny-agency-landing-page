@@ -1,3 +1,35 @@
-*{
-    
+@import url(https://fonts.google.com/specimen/Barlow);
+@import url(https://fonts.google.com/specimen/Fraunces)/*font-weight: 700,900 */
+/* global section */
+:root{
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-blue: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue:  hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
 }
+
+body,html{
+    font-size: 18px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: "Barlow" ,sans-serif;
+    font-weight: 600;
+
+}
+
+/* navbar section */
+.three-bars{
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(0%) contrast(100%) ;
+    display: none;
+    overflow: hidden;
+
+}
+
+
+
