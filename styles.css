@@ -86,10 +86,6 @@ body,html{
     cursor: pointer;
 }
 
-.show-links{
-    width: auto;
-    overflow: visible;
-}
 
 @media (max-width: 50rem){
     .nav-links{
@@ -148,4 +144,9 @@ body,html{
     margin: 0 auto;
     display: block;
     padding-top: 1rem;
+}
+
+.visible{
+    width: 90%!important;
+    overflow: visible!important;
 }
