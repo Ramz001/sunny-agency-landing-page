@@ -1,6 +1,12 @@
 @import url(https://fonts.google.com/specimen/Barlow);
 @import url(https://fonts.google.com/specimen/Fraunces)/*font-weight: 700,900 */
 /* global section */
+
+:root{
+    --gray: #eeeeee;
+}
+
+
 :root{
     --soft-red: hsl(7, 99%, 70%);
     --yellow: hsl(51, 100%, 49%);
@@ -20,16 +26,118 @@ body,html{
     margin: 0;
     font-family: "Barlow" ,sans-serif;
     font-weight: 600;
-
 }
 
 /* navbar section */
-.three-bars{
-    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(0%) contrast(100%) ;
-    display: none;
-    overflow: hidden;
-
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 1.5rem;
+    height: auto;
+    color: var(--white);
 }
 
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    height: auto;
+}
 
+.nav-link{
+    font-size: 14px;
+}
 
+.nav-link:hover,
+.nav-link:active{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.special-link{
+    padding: .7rem .9rem;
+    background: var(--white);
+    color: var(--very-dark-desaturated-blue) ;
+    border-radius: 25px;
+    font-family: "Fraunces";
+    font-weight: 700;
+}
+
+.special-link:active,
+.special-link:hover{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.three-bars{
+    display: none;
+    overflow: hidden;
+    transition: ease-in 1s;
+}
+
+.three-bars:hover,
+.three-bars:active{
+    translate: rotate(90deg)
+}
+
+.show-links{
+    height: auto;
+    width: 90%;
+    display: block;
+}
+
+@media (max-width: 50rem){
+    .nav-links{
+        flex-direction: column;
+        background-color: var(--white);
+        position: absolute;
+        z-index: 1;
+        width: 90%;
+        left: 5%;
+        top: 16%;
+        padding: 1rem 0;
+        height: 0;
+        overflow: hidden;
+        display: none;
+    }
+    .nav-link{
+        color: var(--very-dark-grayish-blue)
+    }
+    .special-link{
+        background-color: var(--yellow);
+    }
+
+    .nav-logo{
+        width: 130px;
+        height: auto;
+    }
+    .three-bars{
+        display: block;
+        overflow: auto;
+    }
+}
+/* header section */
+.header{
+    background: url(/images/desktop/image-header.jpg) no-repeat center;
+    height: 100vh;
+    width: 100%;
+}
+
+.header-img{
+    width: 100%;
+    z-index: 0;
+}
+
+.header-title{
+    text-align: center;
+    font-weight: 900;
+    font-family: "Fraunces",sans-serif;
+    color: var(--white);
+    font-size: 400%;
+}
+
+.arrow-down{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}

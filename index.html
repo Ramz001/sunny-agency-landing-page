@@ -9,26 +9,31 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <!--JavaScript link-->
-  <script deter src="script.js"></script>
+
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <nav>
-    <img src="images/logo.svg" alt="logo" style="background:black;">
-    <div class="nav-links">
-        <div class="nav-link">About</div> 
-        <div class="nav-link">Services</div>
-        <div class="nav-link">Projects</div>
-        <div class="nav-link special-link">Contact</div>
-        <img src="images/icon-hamburger.svg" alt="column" class="three-bars">
-    </div>
-  </nav>
-
-  We are creatives
-  <section>
+  <header class="header">
+    <nav class="navbar">
+      <div>
+        <img src="images/logo.svg" alt="logo" class="nav-logo">
+      </div>
+      <div class="nav-links">
+          <a class="nav-link">About</a> 
+          <a class="nav-link">Services</a>
+          <a class="nav-link">Projects</a>
+          <a class="special-link">Contact</a>
+      </div>
+      <img src="images/icon-hamburger.svg" alt="column" class="three-bars">
+    </nav>
+  
+    <div class="header-title">We are creatives</div>
+    <img src="images/icon-arrow-down.svg" alt="#" class="arrow-down">
+  </header>
+  <section style="margin-top: 10rem;">
     Transform your brand
 
     We are a full-service creative agency specializing in helping brands
@@ -76,5 +81,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
