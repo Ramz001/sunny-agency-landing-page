@@ -2,12 +2,16 @@
 @import url(https://fonts.google.com/specimen/Fraunces)/*font-weight: 700,900 */
 /* global section */
 
+::selection{
+    color:hsl(51, 100%, 49%);
+}
+
 :root{
     --gray: gray;
 }
 
 :root{
-    --soft-red: hsl(7, 99%, 70%);
+    --soft-red: rgb(254, 120, 103);
     --yellow: hsl(51, 100%, 49%);
     --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
@@ -16,6 +20,8 @@
     --very-dark-grayish-blue:  hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
+    --hamburger-transition: .6s ease-out;
+
 }
 
 body,html{
@@ -24,12 +30,9 @@ body,html{
     scroll-behavior: smooth;
     margin: 0;
     font-family: "Barlow" ,sans-serif;
-    font-weight: 600;
-}
-
-.hide-links{
-    height: 0;
-    overflow: hidden;
+    font-weight: 600; 
+    background-size: cover;
+    height: 100%;
 }
 
 /* navbar section */
@@ -77,13 +80,14 @@ body,html{
 .three-bars{
     display: none;
     overflow: hidden;
-    transition: ease-in 1s;
+    transition: ease-in .8s;
 }
 
 .three-bars:hover,
 .three-bars:active{
-    translate: rotate(90deg);
+    transform: rotate(90deg);
     cursor: pointer;
+    transition: var(--hamburger-transition);
 }
 
 
@@ -120,8 +124,9 @@ body,html{
 }
 /* header section */
 .header{
-    background: url(/images/desktop/image-header.jpg) no-repeat center;
-    height: 100vh;
+    background: url(/images/desktop/image-header.jpg) no-repeat ;
+    background-size: 100% 100%;
+    height: 50vw;
     width: 100%;
 }
 
@@ -149,4 +154,38 @@ body,html{
 .visible{
     width: 90%!important;
     overflow: visible!important;
+}
+/* section1 flex-element */
+.flex-main{
+    display: flex;
+}
+
+.flex-image{
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 5rem;
+}
+
+.flex-text{
+    font-size: .9rem;
+    margin: 4rem 0;
+    color: var(--dark-moderate-blue);
+}
+
+.flex-header{
+    font-size: 2rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.flex-link{
+    color: var(--very-dark-desaturated-blue);
+    font-size: 1.3rem;
+    text-decoration: none;
 }
