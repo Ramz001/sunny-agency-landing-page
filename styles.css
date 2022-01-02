@@ -117,7 +117,8 @@ body,html{
 /* header section */
 /* ================== */
 .header{
-    background: url(/images/desktop/image-header.jpg) no-repeat ;
+    background-size: no-repeat;
+    background-image: url(/images/desktop/image-header.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 110vh;
