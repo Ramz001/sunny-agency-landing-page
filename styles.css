@@ -118,7 +118,7 @@ body,html{
 /* ================== */
 .header{
     background-repeat: no-repeat;
-    background-image: url(/images/desktop/image-header.jpg);
+    background-image: url(images/desktop/image-header.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 110vh;
@@ -152,7 +152,7 @@ body,html{
 
 @media (max-width: 50rem){
     .header{
-        background: url(/images/mobile/image-header.jpg) no-repeat;
+        background: url(images/mobile/image-header.jpg) no-repeat;
     }
 }
 
