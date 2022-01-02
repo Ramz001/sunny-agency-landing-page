@@ -153,6 +153,10 @@ body,html{
 @media (max-width: 50rem){
     .header{
         background: url(images/mobile/image-header.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    .header-title{
+        font-size: 270%;
     }
 }
 
