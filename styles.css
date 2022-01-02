@@ -1,10 +1,7 @@
-@import url(https://fonts.google.com/specimen/Barlow);
-@import url(https://fonts.google.com/specimen/Fraunces)/*font-weight: 700,900 */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&display=swap');
 /* global section */
 
-::selection{
-    color:hsl(51, 100%, 49%);
-}
+
 
 :root{
     --gray: gray;
@@ -33,6 +30,56 @@ body,html{
     font-weight: 600; 
     background-size: cover;
     height: 100%;
+}
+
+/* media query section */
+@media (max-width: 50rem){
+    .nav-links{
+        flex-direction: column;
+        background-color: var(--white);
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+        top: 16%;
+        padding: 1rem 0;
+        transition: all 0.3s linear;
+        width: 0;
+        overflow: hidden;
+    }
+
+    .nav-link{
+        color: var(--very-dark-grayish-blue);
+    }
+
+    .special-link{
+        background-color: var(--yellow);
+    }
+
+    .nav-logo{
+        width: 130px;
+        height: auto;
+    }
+    .three-bars{
+        display: block;
+        overflow: auto;
+    }
+    .flex-main{
+        flex-direction: column;
+    }
+
+    .flex-container{
+        padding: 5rem 3%;
+    }
+
+    .flex-image{
+        width: 100%!important;
+    }
+
+    .header{
+        background: url(/images/mobile/image-header.jpg) no-repeat;
+    }
+
+
 }
 
 /* navbar section */
@@ -90,44 +137,12 @@ body,html{
     transition: var(--hamburger-transition);
 }
 
-
-@media (max-width: 50rem){
-    .nav-links{
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        z-index: 1;
-        left: 5%;
-        top: 16%;
-        padding: 1rem 0;
-        transition: all 0.3s linear;
-        width: 0;
-        overflow: hidden;
-    }
-
-    .nav-link{
-        color: var(--very-dark-grayish-blue);
-    }
-
-    .special-link{
-        background-color: var(--yellow);
-    }
-
-    .nav-logo{
-        width: 130px;
-        height: auto;
-    }
-    .three-bars{
-        display: block;
-        overflow: auto;
-    }
-}
 /* header section */
 .header{
     background: url(/images/desktop/image-header.jpg) no-repeat ;
     background-size: 100% 100%;
-    height: 50vw;
     width: 100%;
+    height: 110vh;
 }
 
 .header-img{
@@ -148,7 +163,7 @@ body,html{
     position: relative;
     margin: 0 auto;
     display: block;
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 
 .visible{
@@ -158,10 +173,12 @@ body,html{
 /* section1 flex-element */
 .flex-main{
     display: flex;
+    width: 100%;
 }
 
 .flex-image{
-    width: 100%;
+    flex-shrink: 2;
+    flex-grow: 4;
 }
 
 .flex-container{
@@ -170,11 +187,11 @@ body,html{
     display: block;
     position: relative;
     margin: auto;
-    padding: 5rem;
+    padding: 5rem 9.66%;
 }
 
 .flex-text{
-    font-size: .9rem;
+    font-size: .95rem;
     margin: 4rem 0;
     color: var(--dark-moderate-blue);
 }
@@ -182,10 +199,16 @@ body,html{
 .flex-header{
     font-size: 2rem;
     color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
 }
 
 .flex-link{
     color: var(--very-dark-desaturated-blue);
     font-size: 1.3rem;
     text-decoration: none;
+}
+
+.wdth-50{
+    width: 50%;
 }
