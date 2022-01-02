@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&display=swap');
+/* ================== */
 /* global section */
-
-
-
-:root{
-    --gray: gray;
-}
-
+/* ================== */
 :root{
     --soft-red: rgb(254, 120, 103);
     --yellow: hsl(51, 100%, 49%);
@@ -31,61 +26,12 @@ body,html{
     background-size: cover;
     height: 100%;
 }
-
-/* media query section */
-@media (max-width: 50rem){
-    .nav-links{
-        flex-direction: column;
-        background-color: var(--white);
-        position: absolute;
-        z-index: 1;
-        left: 5%;
-        top: 16%;
-        padding: 1rem 0;
-        transition: all 0.3s linear;
-        width: 0;
-        overflow: hidden;
-    }
-
-    .nav-link{
-        color: var(--very-dark-grayish-blue);
-    }
-
-    .special-link{
-        background-color: var(--yellow);
-    }
-
-    .nav-logo{
-        width: 130px;
-        height: auto;
-    }
-    .three-bars{
-        display: block;
-        overflow: auto;
-    }
-    .flex-main{
-        flex-direction: column;
-    }
-
-    .flex-container{
-        padding: 5rem 3%;
-    }
-
-    .flex-image{
-        width: 100%!important;
-    }
-
-    .header{
-        background: url(/images/mobile/image-header.jpg) no-repeat;
-    }
-
-
-}
-
+/* ================== */
 /* navbar section */
+/* ================== */
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between!important;
     padding: 1.3rem 1.5rem;
     height: auto;
     color: var(--white);
@@ -136,8 +82,40 @@ body,html{
     cursor: pointer;
     transition: var(--hamburger-transition);
 }
+@media (max-width: 50rem){
+    .nav-links{
+        flex-direction: column;
+        background-color: var(--white);
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+        top: 16%;
+        padding: 1rem 0;
+        transition: all 0.3s linear;
+        width: 0;
+        overflow: hidden;
+    }
 
+    .nav-link{
+        color: var(--very-dark-grayish-blue);
+    }
+
+    .special-link{
+        background-color: var(--yellow);
+    }
+
+    .nav-logo{
+        width: 130px;
+        height: auto;
+    }
+    .three-bars{
+        display: block;
+        overflow: auto;
+    }
+}
+/* ================== */
 /* header section */
+/* ================== */
 .header{
     background: url(/images/desktop/image-header.jpg) no-repeat ;
     background-size: 100% 100%;
@@ -170,7 +148,16 @@ body,html{
     width: 90%!important;
     overflow: visible!important;
 }
+
+@media (max-width: 50rem){
+    .header{
+        background: url(/images/mobile/image-header.jpg) no-repeat;
+    }
+}
+
+/* ================== */
 /* section1 flex-element */
+/* ================== */
 .flex-main{
     display: flex;
     width: 100%;
@@ -211,4 +198,18 @@ body,html{
 
 .wdth-50{
     width: 50%;
+}
+
+@media (max-width: 50rem) {
+    .flex-main{
+        flex-direction: column;
+    }
+
+    .flex-container{
+        padding: 5rem 3%;
+    }
+
+    .flex-image{
+        width: 100%!important;
+    }
 }
