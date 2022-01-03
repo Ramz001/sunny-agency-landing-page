@@ -156,7 +156,13 @@ body,html{
         background-size: 100% 100%;
     }
     .header-title{
-        font-size: 270%;
+        font-size: 300%;
+    }
+}
+
+@media (max-width: 37rem){
+    .header-title{
+        font-size: 240%;
     }
 }
 
@@ -286,6 +292,12 @@ body,html{
     font-family: "Fraunces", sans-serif;
 }
 
+.testimonial-container-main{
+    display: flex;
+    gap: 2rem;
+    margin: 0 10% 12% 10%;
+}
+
 .testimonial-container{
     display: flex;
     flex-direction: column;
@@ -297,10 +309,24 @@ body,html{
     border-radius: 50%;
 }
 
+.testimonial-text{
+    color: var(--very-dark-desaturated-blue);
+    max-width: 20rem;
+    line-height: 1.7;
+    margin: 2.5rem 0;
+}
 
+.testimonial-name{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-family: "Fraunces", sans-serif;
+    margin-bottom: 1.5rem;
+}
 
-
-
+.testimonial-job{
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+}
 
 
 
