@@ -5,9 +5,9 @@
 :root{
     --soft-red: rgb(254, 120, 103);
     --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-desaturated-cyan: #25564b;
     --dark-blue: hsl(198, 62%, 26%);
-    --dark-moderate-blue: hsl(168, 34%, 41%);
+    --dark-moderate-blue: hsl(168, 34%, 61%);
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
     --very-dark-grayish-blue:  hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(210, 4%, 67%);
@@ -410,8 +410,57 @@ body,html{
         grid-template-rows: repeat(2, 1fr);
     }
 }
+/* ============== */
+/* footer section */
+/* ============== */
+.footer-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: var(--dark-moderate-blue);
+    gap: 1rem;
+    padding: 4rem 0 2rem 0;
+}
 
-/* custom scrollbar*/
+.footer-logo{
+    width: 10rem;
+    
+}
+
+.footer-sub-container{
+    display: flex;
+    gap: 3rem;
+    margin: 1rem 0;
+}
+
+.footer-contact{
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0; 
+}
+
+.footer-link{
+    color: var(--dark-desaturated-cyan);
+    text-decoration: none;
+}
+
+.contact:hover,
+.contact:active{
+    filter: invert(89%) sepia(100%) saturate(0%) hue-rotate(294deg) brightness(350%) contrast(100%);
+    cursor: pointer;
+}
+
+.footer-link:hover,
+.footer-link:active{
+    color: var(--white);
+    cursor: pointer
+}
+
+/* ================ */
+/* custom scrollbar */
+/* ================ */
 ::-webkit-scrollbar {
     width: 20px;
   }
