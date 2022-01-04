@@ -12,8 +12,6 @@
     --very-dark-grayish-blue:  hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
-    --hamburger-transition: .6s ease-out;
-
 }
 
 body,html{
@@ -78,10 +76,9 @@ body,html{
 
 .three-bars:hover,
 .three-bars:active{
-    transform: rotate(90deg);
     cursor: pointer;
-    transition: var(--hamburger-transition);
 }
+
 @media (max-width: 50rem){
     .nav-links{
         flex-direction: column;
@@ -89,7 +86,7 @@ body,html{
         position: absolute;
         z-index: 1;
         left: 5%;
-        top: 16%;
+        top: 20%;
         padding: 1rem 0;
         transition: all 0.3s linear;
         width: 0;
@@ -143,6 +140,21 @@ body,html{
     margin: 0 auto;
     display: block;
     padding-top: 4rem;
+    animation: 4s arrow infinite;
+}
+
+@keyframes arrow {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(50px)
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .visible{
@@ -182,16 +194,15 @@ body,html{
 .flex-container{
     display: flex;
     flex-direction: column;
-    display: block;
-    position: relative;
-    margin: auto;
-    padding: 12% 9.66%;
+    justify-content: center;
+    padding: 0 10%;
 }
 
 .flex-text{
     font-size: .95rem;
     margin: 4rem 0;
     color: var(--dark-moderate-blue);
+    max-width: 24rem;
 }
 
 .flex-header{
@@ -199,6 +210,7 @@ body,html{
     color: var(--very-dark-desaturated-blue);
     font-family: "Fraunces", sans-serif;
     font-weight: 900;
+    max-width: 20rem;
 }
 
 .flex-link{
@@ -207,6 +219,14 @@ body,html{
     text-decoration: none;
     font-family: "Fraunces", sans-serif;
     font-weight: 700;
+}
+
+.flex-image-orange{
+    order: 2;
+}
+
+.flex-order-container{
+    order: 1;
 }
 
 .wdth-50{
@@ -219,12 +239,32 @@ body,html{
     }
 
     .flex-container{
-        padding: 5rem 3%;
+        order: 2;
+        padding: 2.5rem 0;
+        width: 100%;
+    }
+
+    .flex-header{
+        margin-left: 10%;
+    }
+
+    .flex-text{
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    .flex-link{
+        margin-left: 10%;
     }
 
     .flex-image{
         width: 100%!important;
     }
+
+    .flex-image-orange{
+        order: 1!important;
+    }
+    
 }
 
 /* ==================================== */
@@ -328,7 +368,14 @@ body,html{
     font-size: 15px;
 }
 
-
+@media (max-width: 50rem){
+    .testimonial-container-main{
+        flex-direction: column;
+    }
+    .testimonial-container{
+        margin: 2rem 0;
+    }
+}
 
 
 
