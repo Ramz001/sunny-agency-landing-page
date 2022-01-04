@@ -87,7 +87,7 @@ body,html{
 
     .nav-links::before{
         position: absolute;
-        top: -12.5%;
+        top: -11.5%;
         right: 0;
         content: "";
         width: 0;
@@ -290,7 +290,7 @@ body,html{
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 26% 12% 4% 12%;
+    padding: 30% 12% 5% 12%;
 }
 
 .graphic-container{
