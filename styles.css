@@ -319,7 +319,7 @@ body,html{
     font-family: "Fraunces", sans-serif;
     color: var(--dark-desaturated-cyan)!important;
     font-family: "Fraunces",sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.45rem;
 }
 
@@ -336,7 +336,7 @@ body,html{
 .photography-header{
     color: var(--dark-blue)!important;
     font-family: "Fraunces",sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.45rem;
 }
 
