@@ -5,7 +5,7 @@
 :root{
     --soft-red: rgb(254, 120, 103);
     --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: #25564b;
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-moderate-blue: hsl(168, 34%, 61%);
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -312,6 +312,7 @@ body,html{
 
 .graphic-container{
     background-image: url(images/desktop/image-graphic-design.jpg);
+    background-color: hsl(167, 40%, 44%);
 }
 
 .graphic-header{
@@ -329,6 +330,7 @@ body,html{
 
 .photography-container{
     background-image: url(images/desktop/image-photography.jpg);
+    background-color: hsl(198, 62%, 56%);
 }
 
 .photography-header{
