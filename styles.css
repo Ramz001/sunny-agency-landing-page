@@ -255,7 +255,7 @@ body,html{
 
 @media (max-width: 50rem) {
     .grid-main{
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-columns: 1fr;
         width: auto;
     }
@@ -265,8 +265,8 @@ body,html{
     }
 
     .flex-container{
+        padding: 1.5rem 0;
         order: 2;
-        padding: 2.5rem 0;
         width: 100%;
     }
 
