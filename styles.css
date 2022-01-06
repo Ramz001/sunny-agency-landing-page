@@ -23,10 +23,9 @@ body,html{
     font-weight: 600; 
     height: 100%;
 }
-/* ================== */
+/* ============== */
 /* navbar section */
-/* ================== */
-
+/* ============== */
 .nav-links{
     display: flex;
     gap: 2rem;
@@ -172,7 +171,7 @@ body,html{
     }
 }
 
-.visible{
+.visible{ /* needed for navbar */
     width: 90%!important;
     overflow: visible!important;
 }
@@ -183,6 +182,7 @@ body,html{
         background-size: 100% 100%;
         height: 80%;
     }
+
     .header-title{
         font-size: 300%;
     }
@@ -194,13 +194,10 @@ body,html{
     }
 }
 
-/* ================== */
-/* section1 flex-element */
-/* ================== */
-
-
-
-.flex-image{
+/* ====================== */
+/* section-1 grid-element */
+/* ====================== */
+.grid-image{
     width: 100%;
 }
 
@@ -210,25 +207,18 @@ body,html{
     grid-template-rows: 1fr;
 }
 
-.wdth-50{
+.wdth-50{ /* bullshit but needed for right containers */
     width: 50%;
 }
 
-.flex-container{
+.grid-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 10%;
 }
 
-.flex-text{
-    font-size: .95rem;
-    margin: 4rem 0;
-    color: var(--dark-moderate-blue);
-    max-width: 24rem;
-}
-
-.flex-header{
+.grid-header{
     font-size: 2rem;
     color: var(--very-dark-desaturated-blue);
     font-family: "Fraunces", sans-serif;
@@ -236,15 +226,14 @@ body,html{
     max-width: 20rem;
 }
 
-.flex-link:hover,
-.flex-link:active{
-    text-decoration: underline black;
-    opacity: .75;
-    cursor: pointer;
-    transition: ease-in-out .15s;
+.grid-text{
+    font-size: .95rem;
+    margin: 4rem 0;
+    color: var(--dark-moderate-blue);
+    max-width: 24rem;
 }
 
-.flex-link{
+.grid-link{
     color: var(--very-dark-desaturated-blue);
     font-size: 1.3rem;
     text-decoration: none;
@@ -252,15 +241,21 @@ body,html{
     font-weight: 700;
 }
 
-.flex-image-orange{
+.grid-link:hover,
+.grid-link:active{
+    text-decoration: underline black;
+    opacity: .75;
+    cursor: pointer;
+    transition: ease-in-out .15s;
+}
+
+.grid-image-orange{
     order: 2;
 }
 
 .flex-order-container{
     order: 1;
 }
-
-
 
 @media (max-width: 50rem) {
     .grid-main{
@@ -273,38 +268,37 @@ body,html{
         flex-direction: column;
     }
 
-    .flex-container{
+    .grid-container{
         padding: 1.5rem 0;
         order: 2;
         width: 100%;
     }
 
-    .flex-header{
+    .grid-header{
         margin-left: 10%;
     }
 
-    .flex-text{
+    .grid-text{
         margin-left: 10%;
         margin-right: 5%;
     }
 
-    .flex-link{
+    .grid-link{
         margin-left: 10%;
     }
 
-    .flex-image{
+    .grid-image{
         width: 100%!important;
     }
 
-    .flex-image-orange{
+    .grid-image-orange{
         order: 1!important;
-    }
-    
+    }    
 }
 
-/* ==================================== */
-/* section 2 graphic-design photography */
-/* ==================================== */
+/* ====================== */
+/* section-2 flex-element */
+/* ====================== */
 .flex-main{
     display: flex;
     width: 100%;
@@ -439,6 +433,7 @@ body,html{
         grid-template-rows: repeat(2, 1fr);
     }
 }
+
 /* ============== */
 /* footer section */
 /* ============== */
