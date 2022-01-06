@@ -94,7 +94,6 @@ body,html{
         border-right: 30px solid var(--white);
     }
 
-
     .nav-link{
         color: var(--very-dark-grayish-blue);
     }
@@ -111,6 +110,11 @@ body,html{
     .three-bars{
         display: block;
         overflow: auto;
+    }
+
+    .three-bars:active,
+    .three-bars:hover{
+        filter:blur(1px);
     }
 }
 
