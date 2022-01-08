@@ -242,7 +242,7 @@ body,html{
     font-size: 1.3rem;
     text-decoration: none;
     font-family: "Fraunces", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
 }
   
 .grid-link--yellow:hover,
@@ -319,7 +319,7 @@ body,html{
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 33% 12% 5% 12%;
+    padding: 30% 12% 5% 12%;
 }
 
 .graphic-container{
@@ -330,8 +330,7 @@ body,html{
 .graphic-header{
     font-family: "Fraunces", sans-serif;
     color: var(--dark-desaturated-cyan)!important;
-    font-family: "Fraunces",sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.45rem;
 }
 
@@ -347,8 +346,8 @@ body,html{
 
 .photography-header{
     color: var(--dark-blue)!important;
-    font-family: "Fraunces",sans-serif;
-    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
     font-size: 1.45rem;
 }
 
