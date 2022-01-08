@@ -26,6 +26,14 @@ body,html{
 /* ============== */
 /* navbar section */
 /* ============== */
+.nav{
+    display: flex;
+    justify-content: space-between!important;
+    padding: 1.3rem 1.5rem;
+    height: auto;
+    color: var(--white);
+}
+
 .nav-links{
     display: flex;
     gap: 2rem;
@@ -69,6 +77,10 @@ body,html{
 }
 
 @media (max-width: 50rem){
+    .nav{
+        justify-content: space-between;
+    }
+
     .nav-links{
         flex-direction: column;
         background-color: var(--white);
@@ -115,14 +127,6 @@ body,html{
     .three-bars:hover{
         filter:blur(1px);
     }
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between!important;
-    padding: 1.3rem 1.5rem;
-    height: auto;
-    color: var(--white);
 }
 
 /* ================== */
@@ -240,14 +244,19 @@ body,html{
     font-family: "Fraunces", sans-serif;
     font-weight: 700;
 }
-
-.grid-link:hover,
-.grid-link:active{
-    text-decoration: underline black;
+  
+.grid-link--yellow:hover,
+.grid-link--yellow:active {
+    text-decoration: underline 4px #fad400;
     opacity: .75;
-    cursor: pointer;
-    transition: ease-in-out .15s;
 }
+  
+.grid-link--red:hover,
+.grid-link--red:active {
+    text-decoration: underline 4px #fe7867;
+    opacity: .75;
+}
+
 
 .grid-image-orange{
     order: 2;
