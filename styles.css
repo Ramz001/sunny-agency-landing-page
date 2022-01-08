@@ -377,7 +377,8 @@ body,html{
 }
 
 .testimonial-container-main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin: 0 10% 12% 10%;
 }
