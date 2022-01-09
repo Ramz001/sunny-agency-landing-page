@@ -26,6 +26,7 @@ body,html{
 /* ============== */
 /* navbar section */
 /* ============== */
+
 .nav{
     display: flex;
     justify-content: space-between!important;
@@ -33,6 +34,13 @@ body,html{
     height: auto;
     color: var(--white);
 }
+
+.nav-logo{
+    width: 180px;
+    height: 100%;
+    display: block;
+}
+
 
 .nav-links{
     display: flex;
@@ -214,7 +222,7 @@ body,html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10%;
+    padding: 0 15%;
 }
 
 .grid-header{
@@ -263,7 +271,7 @@ body,html{
 
 @media (max-width: 50rem) {
     .grid-main{
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto auto;
         grid-template-columns: 1fr;
         width: auto;
     }
@@ -273,7 +281,7 @@ body,html{
     }
 
     .grid-container{
-        padding: 1.5rem 0;
+        padding: 2.5rem 0;
         order: 2;
         width: 100%;
     }
