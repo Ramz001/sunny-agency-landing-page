@@ -149,7 +149,7 @@ body,html{
     font-weight: 1100;
     font-family: "Fraunces",sans-serif;
     color: var(--white);
-    font-size: 350%;
+    font-size: 4.5rem;
     margin-top: 2rem;
 }
 
@@ -415,7 +415,8 @@ body,html{
 
 @media (max-width: 50rem){
     .testimonial-container-main{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         margin: 0 5% 12% 5%;
     }
     .testimonial-container{
