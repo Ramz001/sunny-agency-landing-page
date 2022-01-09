@@ -122,11 +122,6 @@ body,html{
         display: block;
         overflow: auto;
     }
-
-    .three-bars:active,
-    .three-bars:hover{
-        filter:blur(1px);
-    }
 }
 
 /* ================== */
