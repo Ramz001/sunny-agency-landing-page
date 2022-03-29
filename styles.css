@@ -14,6 +14,7 @@
     --white: hsl(0, 0%, 100%);
 }
 
+
 body,html{
     font-size: 18px;
     box-sizing: border-box;
@@ -97,8 +98,9 @@ body,html{
         left: 5%;
         top: 20%;
         padding: 1.8rem 0;
-        transition: ease-in-out 0.3s;
+        transition: ease-out 0.3s;
         width: 0;
+        transform: translateY(-100%);
         overflow: hidden;
     }
 
@@ -161,7 +163,7 @@ body,html{
     margin: 0 auto;
     display: block;
     padding-top: 4rem;
-    animation: 4s arrow infinite;
+    animation: 1s arrow infinite;
 }
 
 @keyframes arrow {
@@ -181,6 +183,7 @@ body,html{
 .visible{ /* needed for navbar */
     width: 90%!important;
     overflow: visible!important;
+    transform: translateY(0)!important;;
 }
 
 @media (max-width: 50rem){
@@ -332,14 +335,14 @@ body,html{
 
 .graphic-header{
     font-family: "Fraunces", sans-serif;
-    color: var(--dark-desaturated-cyan)!important;
+    color: var(--dark-desaturated-cyan);
     font-weight: 900;
     font-size: 1.45rem;
 }
 
 .graphic-text{
     font-size: 14px;
-    color: var(--dark-desaturated-cyan)!important;
+    color: var(--dark-desaturated-cyan);
 }
 
 .photography-container{
@@ -494,6 +497,10 @@ body,html{
 .footer-link:active{
     color: var(--white);
     cursor: pointer
+}
+
+@media(prefers-color-scheme: dark){
+    
 }
 
 /* ================ */
